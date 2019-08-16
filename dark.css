@@ -1,0 +1,78 @@
+:root {
+    --black-0: #000000;
+    --black-1: #212121;
+    --black-2: #303030;
+    --black-3: #424242;
+
+    --white-9: #FFFFFF;
+    --white-8: #FAFAFA;
+    --white-7: #F5F5F5;
+    --white-6: #E0E0E0;
+
+    --text: #FFFFFF;
+    --text-2: #F5F5F5;    
+    --icon: #FFFFFF;
+    --icon-2: #F5F5F5;
+}
+
+#topbar {
+    background-color: var(--black-1) !important;
+    border-bottom: 1px #DDD solid;
+}
+
+.topbar-search .topbar-search-input-container .ico {
+    color: var(--white-8) !important;
+}
+
+
+/* Search Bar 
+.topbar-search .topbar-search-input-container input {
+    color: var(--white-9) !important;
+    background-color: var(--black-2) !important;
+} */
+
+input#topbar_search_input {
+    color: var(--white-9) !important;
+    background-color: var(--black-2) !important;
+    border: var(--black-3) !important;
+}
+input#topbar_search_input:hover {
+    background-color: var(--black-3) !important;
+}
+
+.topbar-search .topbar-search-results-container {
+    background-color: var(--black-2) !important;
+}
+
+.topbar-search-results-container .results-display-list .results-display-list-section .results-display-list-item {
+    background-color: var(--black-2) !important;
+    color: var(--text) !important;
+}
+.topbar-search-results-container .results-display-list .results-display-list-section .results-display-list-item:hover {
+    background-color: var(--black-3) !important;
+}
+
+.topbar-search-results-container {
+    border: var(--black-2) !important;
+}
+
+/* Search icons */
+.results-display-list-item .ico-header-conference.start-conference, .results-display-list-item .ico-stroked-phone {
+    color: var(--icon) !important;
+
+}
+.results-display-list-item .ico-stroked-meeting {
+    color: var(--icon) !important;
+}
+
+
+
+.topbar-search-results-container .results-display-list .results-display-list-section .result-display-list-section-title-wrapper {
+    background-color: var(--black-2) !important;
+}
+.topbar-search-results-container .results-display-list .results-display-list-section .result-display-list-section-title {
+    color: var(--white-8) !important;
+}
+.topbar-search-results-container .results-display-list .results-display-list-section .results-display-list-item .results-display-list-item-buttons {
+    background-color: transparent !important;
+}

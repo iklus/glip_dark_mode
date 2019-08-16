@@ -1,0 +1,20 @@
+{
+"manifest_version": 2,
+    "name": " RingCentral Messages (Glip) Dark Mode",
+    "short_name": "Glip Dark Mode",
+    "description": "Makes Glip Dark",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "matches": [
+                "*://app.glip.com/*"
+            ],
+            "css": [
+                "dark.css",
+                "dark_body.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
