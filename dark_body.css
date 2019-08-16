@@ -15,59 +15,75 @@
     --icon-2: #F5F5F5;
 }
 
+/* Overarching properties */
 .content {
-    color: red !important;
+    color: red;
+    background-color: var(--black-1) !important;
+}
+input {
     background-color: var(--black-1) !important;
 }
 
+/* Guest Stripes
+div.guest, h1.stream-header.guest {
+    background-image: url();
+} */
+
+/* Title Header */
 div.plugin-content h1, div.contentpad h1, div.header-holder h1.page-header {
     color: var(--text);
 }
 
-
-
-
-
-
+/* Team and People Shared Properties */
 .team_name, .person_name, .model_name {
     color: var(--text) !important;
+}
+div.team_row, div.person_row, div.model_row {
+    border-top-color: var(--black-3);
+    border-bottom-color: var(--black-3);
 }
 .team_members, .person_info, .model_description, .created_by {
     color: var(--text-2) !important;
 }
 
+/* Small Icons to the left of title header */
 div.prev_today_next span.ico.action, div.header-holder span.ico.action {
     color: var(--icon-2);  
     border-color: var(--black-3);
 }
-
 div.prev_today_next span.ico.action:hover, div.header-holder span.ico.action:hover {
     background-color: var(--black-3) !important; /* Needs Important Tag */
     border-color: var(--black-3) !important; /* Needs Important Tag */
     /* color: blue; */
 }
 
-
-div.people div.person_row {
-    border-top-color: var(--black-3);
-    border-bottom-color: var(--black-3);
+/* Search, Show, and Sort Fields */
+div > div.select {
+    color: var(--text-2);
+    background-color: var(--black-1);
+    border-color: var(--black-3);
 }
-div.people div.person_row:hover {
+div > div.select td.label {
+    background-color: var(--black-2);
+    border-right-color: var(--black-3);
+}
+div.filters .select input.plain {
+    color: var(--text);
+}
+div > div.select .value {
+    color: var(--text);
+}
+div > div.select.hover ul a {
+    color: var(--text);
+}
+
+/* People Row */
+div.people div.person_row:hover, div.people div.person_row:active {
     background: var(--black-2) !important; /* Needs Important Tag */
     border-color: var(--black-3);
 }
 
-.non-tour .team_row:hover, .non-tour .team_row.active, .model_row:hover, .model_row.active, .people .person_row:hover, .people .person_row.active {
-    background: cyan !important;
-}
-/*
-.person_row {
-    background-color: cyan !important;
-}
-.person_row:hover {
-    background-color: cyan !important;
-}
-*/
+/* People Letter Filter */
 ul.alphabet_filter > li.alphabet_letter {
     color: var(--text) !important;
 }
@@ -81,4 +97,12 @@ ul.alphabet_filter > li.disabled:hover {
     background-color: var(--black-2) !important;
 }
 
-
+/* No Results Box */
+div.emptybox, div.post.kip-post div.post-body {
+    background-color: var(--black-2);
+    color: var(--text-2);
+    border-color: var(--black-3);
+}
+div.emptybox h2 {
+    color: var(--text);
+}

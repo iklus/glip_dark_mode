@@ -17,7 +17,7 @@
 
 #topbar {
     background-color: var(--black-1) !important;
-    border-bottom: 1px #DDD solid;
+    border-bottom-color: var(--black-3) !important;
 }
 
 .topbar-search .topbar-search-input-container .ico {
