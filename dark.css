@@ -12,7 +12,7 @@
     --text: #FFFFFF;
     --text-2: #F5F5F5;    
     --icon: #FFFFFF;
-    --icon-2: #F5F5F5;
+    --icon-2: #E0E0E0;
 }
 
 #topbar {
@@ -31,6 +31,7 @@
     background-color: var(--black-2) !important;
 } */
 
+/* Search Bar */
 input#topbar_search_input {
     color: var(--white-9) !important;
     background-color: var(--black-2) !important;
@@ -38,6 +39,13 @@ input#topbar_search_input {
 }
 input#topbar_search_input:hover {
     background-color: var(--black-3) !important;
+}
+input#topbar_search_input::placeholder, input#topbar_search_input::-ms-input-placeholder, input#topbar_search_input:-ms-input-placeholder {  /* -ms required for Edge and IE */
+    color: var(--text-2);
+}
+div#topbar div#tb_header_buttons .ico {
+    color: var(--icon);
+    background: var(--black-2);
 }
 
 .topbar-search .topbar-search-results-container {
@@ -75,4 +83,13 @@ input#topbar_search_input:hover {
 }
 .topbar-search-results-container .results-display-list .results-display-list-section .results-display-list-item .results-display-list-item-buttons {
     background-color: transparent !important;
+}
+
+/* Web Links */
+body[theme=rc] .filerow .cancel:hover, body[theme=rc] div.evenly-spaced.icons .ico:hover, body[theme=rc] .item .hover-info:hover, body[theme=rc] .rightrail p.small a, body[theme=rc] a, body[theme=rc] .mimic_a, body[theme=rc] .non-tour #company_team .team_row:hover .team_name, body[theme=rc] .non-tour #my_teams .team_row:hover .team_name, body[theme=rc] .person_row:hover .person_name, body[theme=rc] .post .actions .ico:hover, body[theme=rc] .rightrail .heading label:hover, body[theme=rc] .rightrail .heading .ico-gear:hover, body[theme=rc] .rightrail .heading .ico-gear.active, body[theme=rc] .rightrail .ico-info:hover, body[theme=rc] .rightrail .video_tutorial a, body[theme=rc] .compose #attach_file:hover, body[theme=rc] .compose #attach_file:hover .ico {
+    color: cyan !important; /* Needs Important Tag becasue this covers a lot */
+}
+/* Filenames */
+div.post div.filename {
+    color: cyan;
 }

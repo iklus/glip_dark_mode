@@ -12,7 +12,7 @@
     --text: #FFFFFF;
     --text-2: #F5F5F5;
     --icon: #FFFFFF;
-    --icon-2: #F5F5F5;
+    --icon-2: #E0E0E0;
 }
 
 /* Overarching properties */
@@ -23,7 +23,22 @@
 input {
     background-color: var(--black-1) !important;
 }
-
+.item-omni div.item .ico, .post div.item .ico {
+    color: var(--icon);
+}
+div.arrow, div.arrow2 {
+    background-color: var(--black-3);
+}
+div.confirm {
+    background-color: var(--black-1);
+    /* box-shadow: rgba(0,0,0,.3) 0 10px 30px; */
+}
+div.confirm div.confirmtitle {
+    color: var(--text-2);
+}
+div.confirm div.confirmbody{
+    color: var(--text);
+}
 /* Guest Stripes
 div.guest, h1.stream-header.guest {
     background-image: url();
@@ -34,7 +49,7 @@ div.plugin-content h1, div.contentpad h1, div.header-holder h1.page-header {
     color: var(--text);
 }
 
-/* Team and People Shared Properties */
+/* Team and People (and custom Emojis) Shared Properties */
 .team_name, .person_name, .model_name {
     color: var(--text) !important;
 }
@@ -44,6 +59,10 @@ div.team_row, div.person_row, div.model_row {
 }
 .team_members, .person_info, .model_description, .created_by {
     color: var(--text-2) !important;
+}
+div.people div.person_row:hover, div.people div.person_row:active, div.non-tour div.team_row:hover, div.non-tour div.team_row.active, div.model_row:hover, div.model_row.active {
+    background: var(--black-2) !important; /* Needs Important Tag */
+    border-color: var(--black-3);
 }
 
 /* Small Icons to the left of title header */
@@ -78,10 +97,7 @@ div > div.select.hover ul a {
 }
 
 /* People Row */
-div.people div.person_row:hover, div.people div.person_row:active {
-    background: var(--black-2) !important; /* Needs Important Tag */
-    border-color: var(--black-3);
-}
+
 
 /* People Letter Filter */
 ul.alphabet_filter > li.alphabet_letter {
@@ -105,4 +121,182 @@ div.emptybox, div.post.kip-post div.post-body {
 }
 div.emptybox h2 {
     color: var(--text);
+}
+
+
+
+/* --- Messages (People & Teams) --- */
+/* Title */
+div > h1.stream-header {
+    background-color: var(--black-1) !important; /* Needs Important Tag */
+    border-bottom-color: var(--black-3);
+}
+div.plugin-content h1, siv.contentpad h1, div > h1.page-header {
+    color: var(--text);
+}
+div > .icon-button .ico {
+    color: var(--icon);
+}
+div.centerrail .stream-action {
+    color: var(--icon);
+    background-color: var(--black-1);
+    border-color: var(--black-3) !important; /* Needs Important Tag */
+}
+div > .prev_today_next .ico.action:hover, div > .header-holder .ico.action:hover, div.centerrail .stream-action.active, div.centerrail .stream-action:hover {
+    /* color: var(--color); */
+    border-color: var(--black-2) !important;
+    background-color: var(--black-2) !important;
+}
+/* Conversation */
+div.postslist {
+    background-color: var(--black-1);
+}
+div.postslist .sep {
+    border-bottom-color: var(--black-3);
+}
+div.postslist div.sep label {
+    background-color: var(--black-1);
+    border-color: var(--black-3);
+    color: var(--text);
+}
+div.first-post {
+    background-color: var(--black-1);;
+    color: var(--text);
+}
+span.calls-to-action-welcome-title {
+    color: var(--text);
+}
+div.call-to-action-block div.round-button {
+    background-color: var(--black-2);
+}
+/*
+div.call-to-action-block p {
+    color: var(--color);
+}
+*/
+div.post div.post-body {
+    border-top-color: var(--black-3);
+}
+div.post .activity {
+    color: var(--text-2);
+}
+div.post div.timestamp {
+    color: var(--white-6);
+}
+div.post div.post_text {
+    color: var(--text);
+}
+
+/* Action Icons and Menu */
+div.post div.actions .ico {
+    color: var(--icon-2);
+}
+div > menu.dropdown, div > .hint, div > .compose-popup {
+    background-color: var(--black-1);
+    border-color: var(--black-3);
+    /* box-shadow: */
+}
+div.sep {
+    border-top-color: var(--black-3);
+}
+div > menu.dropdown li.rollover {
+    color: var(--text-2);
+}
+div > menu.dropdown li.rollover:hover, div > menu.dropdown li.hover {
+    background: var(--black-3) !important; /* Needs Important Tag */
+    color: var(--text) !important; /* Needs Important Tag */
+}
+div > menu.dropdown .ico {
+    color: var(--icon-2);
+}
+div > menu.dropdown li:hover .ico, div > menu.dropdown li li:hover .ico.ico-submenu-file {
+    color: var(--icon);
+}
+
+/* Link Preview Box */
+div > .post:nth-child(2n) .link {
+    background-color: var(--black-1);
+}
+.post div.item.link.can-delete:not(.simple):hover {
+    border-color: var(--black-3);
+    padding: 5px;
+    border-radius: 8px;
+}
+.post div.item.link .linktitle .ico-remove-1 {
+    color: var(--icon-2);
+}
+
+/* Text Box */
+div#postswrapper div.compose {
+    background-color: var(--black-1);
+}
+div.compose_type {
+    background-color: var(--black-2);
+}
+div.compose_type .content-type  {
+    color: var(--white-6);
+}
+div > .stream-compose .compose_type, div > .stream-compose .chat-textarea {
+    border-color: var(--black-3) !important; /* Needs Important Tag */
+}
+div > .stream-compose.focused .compose_type, div > .stream-compose.stream-compose.focused .chat-textarea {
+    border-color: var(--black-3) !important; /* Needs Important Tag */
+}
+div.progress_bar {
+    border-color: var(--black-3);
+}
+div.mentions {
+    background-color: var(--black-1) !important; /* Needs Important Tag, but not sure why. */
+}
+div > textarea.chat-textarea {
+    color: var(--text);
+}
+div > textarea.chat-textarea::placeholder, div > textarea.chat-textarea::-ms-input-placeholder, div > textarea.chat-textarea:-ms-input-placeholder {  /* -ms required for EDge and IE */
+    color: var(--text-2);
+}
+
+/*
+textarea.chat-textarea {
+    background-color: blue;
+    color: yellowgreen;
+}
+*/
+
+/* Emoji Menu */
+div.emojis ul.emoji-tabs {
+    background-color: var(--black-2);
+    border-bottom-color: var(--black-3);
+}
+div.emojis ul.emoji-tabs li{
+    border-bottom-color: var(--black-3);
+}
+ul.emoji-tabs li.selected {
+    background-color: var(--black-1);
+    border: 1px solid var(--black-3);
+    border-bottom-color: var(--black-1);
+}
+div.emojis ul.emoji-tabs li:hover {
+    background-color: var(--black-2);
+    border-bottom-color: var(--black-2);
+}
+div.emojis div.legend {
+    border-top-color: var(--black-3);
+    background-color: var(--black-2);
+    color: var(--text);
+}
+div.emojis h2 {
+    color: var(--text-2);
+}
+div.emoji-lists-wrap div.emoji-one-attribution {
+    color: var(--text);
+}
+div.emojis img.emoji:hover {
+    background-color: var(--black-2);
+    border-color: var(--black-3)
+    /* box-shadow: none; */
+}
+
+
+div > .ico:before {
+    color: purple;
 }
