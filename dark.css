@@ -93,3 +93,8 @@ body[theme=rc] .filerow .cancel:hover, body[theme=rc] div.evenly-spaced.icons .i
 div.post div.filename {
     color: cyan;
 }
+
+/* Most Icons */
+div > .ico:before {
+    color: purple;
+}

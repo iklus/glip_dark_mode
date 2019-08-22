@@ -17,7 +17,7 @@
 
 /* Overarching properties */
 .content {
-    color: red;
+    color: var(--text);
     background-color: var(--black-1) !important;
 }
 input {
@@ -270,14 +270,14 @@ div.emojis ul.emoji-tabs {
 div.emojis ul.emoji-tabs li{
     border-bottom-color: var(--black-3);
 }
-ul.emoji-tabs li.selected {
+div.emojis ul.emoji-tabs li.selected {
     background-color: var(--black-1);
     border: 1px solid var(--black-3);
     border-bottom-color: var(--black-1);
 }
 div.emojis ul.emoji-tabs li:hover {
-    background-color: var(--black-2);
-    border-bottom-color: var(--black-2);
+    background-color: var(--black-3);
+    border-bottom-color: var(--black-3);
 }
 div.emojis div.legend {
     border-top-color: var(--black-3);
@@ -287,8 +287,8 @@ div.emojis div.legend {
 div.emojis h2 {
     color: var(--text-2);
 }
-div.emoji-lists-wrap div.emoji-one-attribution {
-    color: var(--text);
+div.emojis .emoji-lists-wrap .emoji-one-attribution {
+    color: var(--text) !important;
 }
 div.emojis img.emoji:hover {
     background-color: var(--black-2);
@@ -297,6 +297,3 @@ div.emojis img.emoji:hover {
 }
 
 
-div > .ico:before {
-    color: purple;
-}
