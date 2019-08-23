@@ -39,10 +39,10 @@ div.confirm div.confirmtitle {
 div.confirm div.confirmbody{
     color: var(--text);
 }
-/* Guest Stripes
-div.guest, h1.stream-header.guest {
-    background-image: url();
-} */
+/* Guest Stripes */
+div.guest, div > h1.stream-header.guest {
+    background-image: url(https://raw.githubusercontent.com/iklus/glip_dark_mode/master/images/dark_diag_lines.png) !important;
+} 
 
 /* Title Header */
 div.plugin-content h1, div.contentpad h1, div.header-holder h1.page-header {
@@ -296,4 +296,27 @@ div.emojis img.emoji:hover {
     /* box-shadow: none; */
 }
 
-
+/* Right Panel */
+div.rightrail {
+    background-color: var(--black-1);
+    border-left-color: var(--black-1);
+}
+div.rightrail p.tiptext {
+    color: var(--text-2);
+}
+div.heading {
+    color: var(--text-2);
+}
+div #rr-add-people {
+    /* color: var(--icon); */
+    border-color: var(--black-3);
+}
+div#rr-add-people:hover {
+    /* color: #0684bd; */
+    background-color: var(--black-3);
+    border-color: var(--black-3);
+}
+div.rightrail div.sep label {
+    background-color: var(--black-1);
+    color: var(--text-2);
+}
