@@ -85,6 +85,12 @@ div#topbar div#tb_header_buttons .ico {
     background-color: transparent !important;
 }
 
+div.presence {
+    border-color: var(--black-1);
+}
+div.headshot-presence-widget div.presence-widget div.presence {
+    border-color: var(--black-1);
+}
 /* Web Links */
 body[theme=rc] .filerow .cancel:hover, body[theme=rc] div.evenly-spaced.icons .ico:hover, body[theme=rc] .item .hover-info:hover, body[theme=rc] .rightrail p.small a, body[theme=rc] a, body[theme=rc] .mimic_a, body[theme=rc] .non-tour #company_team .team_row:hover .team_name, body[theme=rc] .non-tour #my_teams .team_row:hover .team_name, body[theme=rc] .person_row:hover .person_name, body[theme=rc] .post .actions .ico:hover, body[theme=rc] .rightrail .heading label:hover, body[theme=rc] .rightrail .heading .ico-gear:hover, body[theme=rc] .rightrail .heading .ico-gear.active, body[theme=rc] .rightrail .ico-info:hover, body[theme=rc] .rightrail .video_tutorial a, body[theme=rc] .compose #attach_file:hover, body[theme=rc] .compose #attach_file:hover .ico {
     color: cyan !important; /* Needs Important Tag becasue this covers a lot */
